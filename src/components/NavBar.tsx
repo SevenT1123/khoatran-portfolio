@@ -1,8 +1,11 @@
+"use client"
 import Link from 'next/link';
-import React from 'react'
 import Logo from './Logo';
+import { LuMenu, LuX } from 'react-icons/lu';
+import NavBarMobile from './NavBarMobile';
+import React, { useEffect, useState } from 'react'
 
-const NavLinks = [
+export const NavLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
@@ -10,8 +13,24 @@ const NavLinks = [
 ];
 
 export default function NavBar() {
+  const [navOpen, setNavOpen] = useState(false);
+  const [navBg, setNavBg] = useState(false);
+
+  useEffect(() => {
+    const navHandler = () => {
+      if (window.scrollY >= 90) {
+        setNavBg(true);
+      }
+      else {
+        setNavBg(false);
+      }
+    }
+
+    window.addEventListener("scroll", navHandler);
+  }, [])
+
   return (
-    <nav className="h-18 fixed z-50 w-full">
+    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBg ? "bg-[#3a0f09] shadow-md" : ""}`}>
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/*logo*/}
         <Logo />
@@ -25,6 +44,12 @@ export default function NavBar() {
             )
           })}
         </ul>
+
+        <button onClick={() => setNavOpen(!navOpen)}
+        className="w-8 h-8 cursor-poiner text-white z-100 lg:hidden">
+          {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
+        </button>
+        <NavBarMobile navOpen={navOpen}/>
       </div>
     </nav>
   )
