@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} antialiased bg-[#0b0709]`}
+        className={`${montserrat.className} antialiased bg-[var(--khoa-mahogany)]`}
       >
         <NavBar/>
         {children}

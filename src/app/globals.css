@@ -7,3 +7,9 @@
     --khoa-amber: #9d0722;
     --khoa-red: #bf011b;
 }
+
+.darkveil-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
