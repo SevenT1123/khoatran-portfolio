@@ -34,7 +34,7 @@ export default function NavBar() {
   }, [])
 
   return (
-    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBg ? "bg-[var(--khoa-dark-crimson)] shadow-md" : ""}`}>
+    <nav className={`top-0 left-0 h-18 fixed z-50 w-full transition-all duration-300 ${navBg ? "bg-[var(--khoa-dark-crimson)] shadow-md" : ""}`}>
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/*logo*/}
         <Logo />

@@ -20,7 +20,7 @@ export default function HeroSection() {
             </div>
             <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-red-700 to-white">Hi, I&apos;m Khoa Tran</h1>
             <AnimatedIntro/>
-            <LinkButton href="/projects"text="Visit my work here" icon={LuArrowRight} rounded/>
+            <LinkButton href="/about"text="Get to know me" icon={LuArrowRight} rounded/>
         </div>
     </section>
   )
