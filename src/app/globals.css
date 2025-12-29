@@ -1,2 +1,9 @@
 @import "tailwindcss";
 
+:root {
+    --khoa-mahogany: #0d0405;
+    --khoa-dark-crimson: #3b0e09;
+    --khoa-crimson: #6c0613;
+    --khoa-amber: #9d0722;
+    --khoa-red: #bf011b;
+}

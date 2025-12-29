@@ -27,10 +27,14 @@ export default function NavBar() {
     }
 
     window.addEventListener("scroll", navHandler);
+
+    return () => {
+      window.removeEventListener("scroll", navHandler);
+    }
   }, [])
 
   return (
-    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBg ? "bg-[#3a0f09] shadow-md" : ""}`}>
+    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBg ? "bg-[var(--khoa-dark-crimson)] shadow-md" : ""}`}>
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/*logo*/}
         <Logo />
