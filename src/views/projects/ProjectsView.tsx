@@ -8,7 +8,7 @@ export default function ProjectsView() {
     const projects = [
     {
         title: "Khoa Tran's Portfolio Website",
-        date: "2025",
+        date: "December 2025",
         description: "Personal website developed using Next.js and TailwindCSS for frontend.",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "HTML", "Nodejs"],
         github: "https://github.com/SevenT1123/khoatran-portfolio",
@@ -16,14 +16,14 @@ export default function ProjectsView() {
     },
     {
         title: "SevenT.vst3",
-        date: "2024 - Present",
+        date: "November 2024 - Present",
         description: "Developed a single oscillator digital virtual synthesizer featuring 7 wave types, unisons, ADSR envelope and filters. Developed using C++ and JUCE Framework",
         tech: ["C++", "DSP", "JUCE Framework", "Visual Studio"],
         github: "https://github.com/SevenT1123/SevenT.vst3"
     },
     {
         title: "University of Guelph Gryphon Racing Website Redesign",
-        date: "2025",
+        date: "October 2025",
         description: "Redesigned the official University of Guelph Gryphon Racing Team website to improve visual and accessibility.",
         tech: ["Vue.js", "TypeScript", "HTML/CSS"],
         link: "https://www.gryphonracing.org/"
