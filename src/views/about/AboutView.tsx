@@ -11,7 +11,7 @@ export default function AboutView() {
     { name: 'Python', icon: '/icons/python-icon.svg' },
     { name: 'Java', icon: '/icons/java-icon.svg' },
     { name: 'Reactjs', icon: '/icons/react-icon.svg' },
-    { name: 'Vuejs', icon: '/icons/vuejs-icon.svg' },
+    { name: 'Vuejs', icon: '/icons/vue-icon.svg' },
     { name: 'HTML5', icon: '/icons/html-icon.svg' },
     { name: 'CSS', icon: '/icons/css-icon.svg' },
     { name: 'JavaScript', icon: '/icons/js-icon.svg' },
