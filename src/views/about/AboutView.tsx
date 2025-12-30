@@ -18,18 +18,17 @@ export default function AboutView() {
     { name: 'TypeScript', icon: '/icons/ts-icon.svg' },
     { name: 'Nodejs', icon: '/icons/nodejs-icon.svg' },
     { name: 'AWS', icon: '/icons/aws-icon.svg' },
-    { name: 'Git', icon: '/icons/git-icon.svg' },
     { name: 'Visual Studio Code', icon: '/icons/vscode-icon.svg' },
     { name: 'Visual Studio', icon: '/icons/vs-icon.svg' },
     { name: 'IntelliJ', icon: '/icons/intellij-icon.svg' },
     { name: 'Arduino', icon: '/icons/arduino-icon.svg' },
     { name: 'PlatformIO', icon: '/icons/platformio-icon.svg' },
-    { name: 'STM32', icon: '/icons/platformio-icon.svg' },
+    { name: 'STM32', icon: '/icons/stm32-icon.svg' },
     { name: 'Git', icon: '/icons/git-icon.svg' },
     { name: 'Docker', icon: '/icons/docker-icon.svg' },
     { name: 'AutoCAD', icon: '/icons/autocad-icon.svg' },
     { name: 'Solidworks', icon: '/icons/solidworks-icon.svg' },
-    { name: 'Altium', icon: '/icons/altium-icon.svg' },
+    { name: 'Altium Designer', icon: '/icons/altium-icon.svg' },
   ];
 
   return (
