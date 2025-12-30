@@ -20,7 +20,7 @@ export default function ProjectsView() {
     {
         title: "SevenT.vst3",
         date: "November 2024 - Present",
-        image: "/projects/",
+        image: "/projects/seventvst3.png",
         imageWidth: 1024, 
         imageHeight: 768, 
         description: "Developed a single oscillator digital virtual synthesizer featuring 7 wave types, unisons, ADSR envelope and filters. Developed using C++ and JUCE Framework",
@@ -30,7 +30,7 @@ export default function ProjectsView() {
     {
         title: "University of Guelph Gryphon Racing Website Redesign",
         date: "October 2025",
-        image: "/projects/",
+        image: "/projects/gryphonracingorg.png",
         imageWidth: 1920,
         imageHeight: 1080,
         description: "Redesigned the official University of Guelph Gryphon Racing Team website to improve visual and accessibility.",
@@ -40,9 +40,9 @@ export default function ProjectsView() {
     {
         title: "Controlling ESP32 GPIOs Through Website",
         date: "June 2025",
-        image: "/projects/",
-        imageWidth: 0,
-        imageHeight: 0,
+        image: "/projects/esp32webapp.png",
+        imageWidth: 1920,
+        imageHeight: 1080,
         description: "Developed a demo project controlling ESP32 from website. Website sends state and read state from ESP32 GPIOs simultaneously from AWS. ESP32 sends states to AWS using WebSocket.h. The website is currently down",
         tech: ["ESP32", "AWS", "React.js", "Node.js", "IoT"],
         github: "https://github.com/SevenT1123/ESP32S3-WebSocket-AWS-Public"
@@ -51,10 +51,10 @@ export default function ProjectsView() {
 
   return (
     <section id="projects" className="py-12 bg-[var(--khoa-mahogany)] min-h-screen">
-      <Header title="My Projects" as="h1" />
+      <Header title="My Projects / Group Work" as="h1" />
       
-      <div className="relative w-[80%] sm:w-[70%] lg:w-[50%] mx-auto mt-10">
-        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-0.5 bg-gray-700"></div>
+      <div className="relative w-[90%] sm:w-[70%] lg:w-[50%] mx-auto mt-10">
+        <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-0.5 bg-gray-400"></div>
         <div className="flex flex-col">
           {projects.map((project, index) => (
             <ProjectsCard 

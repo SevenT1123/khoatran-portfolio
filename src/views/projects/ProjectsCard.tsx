@@ -38,13 +38,13 @@ export default function ProjectCard({
 
       {/* 2. Central Node (The Dot) */}
       <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center justify-center z-20">
-        <div className="w-4 h-4 rounded-full bg-[var(--khoa-red)] border-4 border-[var(--khoa-mahogany)] shadow-[0_0_10px_rgba(191,1,27,0.8)]"></div>
+        <div className="w-6 h-6 rounded-full bg-[var(--khoa-red)] border-4 border-[var(--khoa-mahogany)] shadow-[0_0_10px_rgba(191,1,27,0.8)]"></div>
       </div>
 
       {/* 3. Text Content Card */}
       <div className="w-full md:w-[45%] mt-8 md:mt-0 z-10">
-        <div className="bg-[var(--khoa-dark-crimson)] p-6 md:p-8 rounded-2xl border border-white/5 shadow-xl transition-all hover:border-[var(--khoa-red)]">
-          <span className="text-[var(--khoa-red)] font-bold text-xs tracking-widest uppercase mb-2 block">
+        <div className="bg-[var(--khoa-crimson)] p-6 md:p-8 rounded-2xl border border-white/5 shadow-xl transition-all hover:border-[var(--khoa-red)]">
+          <span className="text-red-400 font-bold text-xs tracking-widest uppercase mb-2 block">
             {date}
           </span>
           <h3 className="text-white text-2xl font-bold mb-3">{title}</h3>
