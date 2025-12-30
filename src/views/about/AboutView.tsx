@@ -12,10 +12,10 @@ export default function AboutView() {
     { name: 'Java', icon: '/icons/java-icon.svg' },
     { name: 'Reactjs', icon: '/icons/react-icon.svg' },
     { name: 'Vuejs', icon: '/icons/vuejs-icon.svg' },
-    { name: 'HTML5', icon: '/icons/html5-icon.svg' },
-    { name: 'CSS', icon: '/icons/css3-icon.svg' },
-    { name: 'JavaScript', icon: '/icons/javascript-icon.svg' },
-    { name: 'TypeScript', icon: '/icons/typescript-icon.svg' },
+    { name: 'HTML5', icon: '/icons/html-icon.svg' },
+    { name: 'CSS', icon: '/icons/css-icon.svg' },
+    { name: 'JavaScript', icon: '/icons/js-icon.svg' },
+    { name: 'TypeScript', icon: '/icons/ts-icon.svg' },
     { name: 'Nodejs', icon: '/icons/nodejs-icon.svg' },
     { name: 'AWS', icon: '/icons/aws-icon.svg' },
     { name: 'Git', icon: '/icons/git-icon.svg' },
@@ -32,7 +32,6 @@ export default function AboutView() {
     { name: 'Altium', icon: '/icons/altium-icon.svg' },
   ];
 
-
   return (
     <section id="about" className="my-12">
         <Header title="About Me" as="h1"/>
@@ -48,6 +47,13 @@ export default function AboutView() {
         </div>
 
         <Header title="Skills" as="h2"/>
+        <div className="w-[70%] sm:w-[50%] mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          {skills.map((skill) => (
+            <AboutCard key={skill.name} name={skill.name} icon={skill.icon} />
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
