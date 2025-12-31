@@ -1,5 +1,5 @@
-import React from 'react'
-import Header from '@/components/Header';
+"use client"
+import React, { useState } from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
 import Link from 'next/link';
 import { LuSend } from 'react-icons/lu';
@@ -21,7 +21,30 @@ const contactInfo = [
 
 export default function ContactsView() {
   const InputStyles = "px-4 py-3.5 my-4 bg-[var(--khoa-crimson)] outline-note rounded-md w-full text-gray-200 placeholder-gray-400"
-  
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (event:React.FormEvent) => {
+    setLoading(true);
+    event.preventDefault();
+    const formData = new FormData(event.target as HTMLFormElement);
+    formData.append("access_key", "da751d9f-ae67-4d8e-bd8c-5b20aa5ee83a");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    if (data.success) {
+
+      (event.target as HTMLFormElement).reset();
+    } else {
+
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section id="contact" className="py-16 lg:py-30">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 ga-6 lg:gap-12">
@@ -45,15 +68,25 @@ export default function ContactsView() {
           </div>
         </div>
         
-        <div>
-          <form className="rounded-lg bg-[var(--khoa-dark-crimson)] px-4 py-8">
+        <div data-aos="zoom-in">
+          <form onSubmit={onSubmit} className="rounded-lg bg-[var(--khoa-dark-crimson)] px-4 py-8">
             <input type="text" placeholder="Name" className={InputStyles}/>
             <input type="text" placeholder="Email" className={InputStyles} required/>
             <input type="text" placeholder="Subject of Message" className={InputStyles} required/>
             <textarea placeholder="Message" required className={`${InputStyles} resize-none`} rows={5}/>
             <button className="w-full bg-linear-to-r from-red-900 to-red-700 hover:from-red-700 hover:to-red-500 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:opacity-70">
-              <LuSend size={20} />
-              Send Message
+
+              {loading ? (
+                <>
+                  <span className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                  Sending...
+                </>
+                ) : (
+                <>
+                  <LuSend size={20} />
+                  Send Message
+                </>
+              )}
             </button>
           </form>
         </div>
