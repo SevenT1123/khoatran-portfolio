@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
 import Link from 'next/link';
 import { LuSend } from 'react-icons/lu';
+import toast from 'react-hot-toast';
 
 const contactInfo = [
     {
@@ -36,10 +37,20 @@ export default function ContactsView() {
 
     const data = await response.json();
     if (data.success) {
-
       (event.target as HTMLFormElement).reset();
+      toast("Form submitted successfully"), {
+        style: {
+          background: "#3cf639",
+          color: "white"
+        }
+      }
     } else {
-
+      toast("Form submitted successfully"), {
+        style: {
+          background: "#f64f39",
+          color: "white"
+        }
+      }
     }
 
     setLoading(false);
@@ -70,10 +81,10 @@ export default function ContactsView() {
         
         <div data-aos="zoom-in">
           <form onSubmit={onSubmit} className="rounded-lg bg-[var(--khoa-dark-crimson)] px-4 py-8">
-            <input type="text" placeholder="Name" className={InputStyles}/>
-            <input type="text" placeholder="Email" className={InputStyles} required/>
-            <input type="text" placeholder="Subject of Message" className={InputStyles} required/>
-            <textarea placeholder="Message" required className={`${InputStyles} resize-none`} rows={5}/>
+            <input type="text" placeholder="Name" className={InputStyles} required name="name"/>
+            <input type="text" placeholder="Email" className={InputStyles} required name="email"/>
+            <input type="text" placeholder="Subject" className={InputStyles} required name="subject"/>
+            <textarea placeholder="Message" required className={`${InputStyles} resize-none`} rows={5} name="message"/>
             <button className="w-full bg-linear-to-r from-red-900 to-red-700 hover:from-red-700 hover:to-red-500 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:opacity-70">
 
               {loading ? (
