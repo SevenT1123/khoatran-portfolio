@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa'
 import Link from 'next/link';
 import { LuSend } from 'react-icons/lu';
 import toast from 'react-hot-toast';
@@ -18,6 +18,18 @@ const contactInfo = [
       value: "+1 (519)-276-12006",
       link: "tel:+15192761206",
     },
+    {
+      icon: <FaLinkedin className="w-6 h-6"/>,
+      title: "LinkedIn",
+      value: "Khoa Tran",
+      link: "https://www.linkedin.com/in/khoanatran70/",
+    },
+    {
+      icon: <FaGithub className="w-6 h-6"/>,
+      title: "Github",
+      value: "SevenT1123",
+      link: "https://github.com/SevenT1123",
+    }
 ];
 
 export default function ContactsView() {

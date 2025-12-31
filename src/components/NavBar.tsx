@@ -53,7 +53,7 @@ export default function NavBar() {
         className="w-8 h-8 cursor-poiner text-white z-100 lg:hidden">
           {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
         </button>
-        <NavBarMobile navOpen={navOpen}/>
+        <NavBarMobile navOpen={navOpen} onClose={() => setNavOpen(false)}/>
       </div>
     </nav>
   )
