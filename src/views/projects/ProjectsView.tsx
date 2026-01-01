@@ -33,8 +33,9 @@ export default function ProjectsView() {
         image: "/projects/gryphonracingorg.png",
         imageWidth: 1920,
         imageHeight: 1080,
-        description: "Redesigned the official University of Guelph Gryphon Racing Team website to improve visual and accessibility.",
+        description: "Redesigned the official University of Guelph Gryphon Racing Team website to improve visual and accessibility. The website was deployed and developed by the team's alumnae. I updated team's leader profiles and redesign the frontend.",
         tech: ["Vue.js", "TypeScript", "HTML/CSS"],
+        github: "https://github.com/GryphonRacingFSAE/Website",
         link: "https://www.gryphonracing.org/"
     },
     {
