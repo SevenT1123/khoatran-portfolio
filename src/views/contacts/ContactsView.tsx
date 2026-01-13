@@ -9,8 +9,8 @@ const contactInfo = [
     {
       icon: <FaEnvelope className="w-6 h-6"/>, 
       title: "Email",
-      value: "tnakhoa2311@gmail.com",
-      link: "mailto:tnakhoa2311@gmail.com",
+      value: "ngocanhk@uoguelph.ca",
+      link: "mailto:ngocanhk@uoguelph.ca",
     },
     {
       icon: <FaPhone className="w-6 h-6"/>,
