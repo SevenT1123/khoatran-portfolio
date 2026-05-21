@@ -42,7 +42,7 @@ export default function AboutView() {
             I have over 2 years of experience in C-based languages such as C, C++, which I used for embedded systems and audio programming starting from 2023. I gained web development experience using Vue.js, HTML, CSS, Typescript while redesigning Gryphon Racing Team&apos;s website and IoT development experience using Python, discord.py library, and ESP32 in 2025.<br/><br/>
             Currently, I&apos;m learning Fullstack Development using the PERN stack (PostgreSQL, Express.js, React.js, Node.js) and improving my skills in C++ and embedded systems.
           </div>
-          <Image className="justify-self-center self-center" src="/photo/khoatran_lowerangle.png" alt="khoatran-photo" width={400} height={400}/>
+          <Image className="justify-self-center self-center" src="/photo/khoatran_pfp.png" alt="khoatran-photo" width={400} height={400}/>
         </div>
 
         <Header title="Skills" as="h2"/>
