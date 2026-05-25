@@ -8,7 +8,7 @@ export default function ProjectsView() {
     const projects = [
     {
         title: "GRC26 IMU-GPS Module",
-        date: "April 2025 - Present",
+        date: "April 2026 - Present",
         image: "/projects/grc26-imu-gps.png",
         imageWidth: 1920,
         imageHeight: 1080,
