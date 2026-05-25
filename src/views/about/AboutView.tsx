@@ -39,8 +39,8 @@ export default function AboutView() {
             Glad you visit my website. I&apos;m Khoa Tran, a Computer Engineering student at University of Guelph, Ontario, Canada. 
             I&apos;m a member in University of Guelph <Link href="https://www.gryphonracing.org/" target="_blank" className="text-red-400 underline hover:text-yellow-400 transition-colors">Gryphon Racing</Link> for embedded and electrical tasks.<br/><br/>
             I&apos;m open to new challenges. Whether I have a background in it or not, I&apos;m willing to learn new languages, frameworks, and concepts. Creating applications with high accessibility for clients is my goal. I&apos;m also making applications related to my hobbies.<br/><br/>
-            I have over 2 years of experience in C-based languages such as C, C++, which I used for embedded systems and audio programming starting from 2023. I gained web development experience using Vue.js, HTML, CSS, Typescript while redesigning Gryphon Racing Team&apos;s website and IoT development experience using Python, discord.py library, and ESP32 in 2025.<br/><br/>
-            Currently, I&apos;m learning Fullstack Development using the PERN stack (PostgreSQL, Express.js, React.js, Node.js) and improving my skills in C++ and embedded systems.
+            I have over 2 years of experience in C-based languages such as C, C++, which I used for embedded systems and audio programming starting from 2023. I gained real-time operating system development, data acquisition, and CAN communication system experience from developing <Link href="https://github.com/GryphonRacingFSAE/GRC26" target="_blank" className="text-red-400 underline hover:text-yellow-400 transition-colors">custom Dashboard and IMU-GPS module</Link> for Gryphon Racing.<br/><br/>
+            I&apos;m heading up to apply my skills in web development and embedded systems to create an accessible data logger for all Gryphon Racing members not just for electrical subsection members.
           </div>
           <Image className="justify-self-center self-center" src="/photo/khoatran_pfp.png" alt="khoatran-photo" width={400} height={400}/>
         </div>
