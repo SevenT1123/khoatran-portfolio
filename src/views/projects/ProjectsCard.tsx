@@ -13,10 +13,15 @@ interface ProjectProps {
   index: number;
   link?: string;
   github?: string;
+  contributor?: {
+    name: string;
+    role: string;
+    linkedin: string;
+  };
 }
 
 export default function ProjectCard({ 
-  title, date, description, tech, image, imageWidth, imageHeight, index, link, github 
+  title, date, description, tech, image, imageWidth, imageHeight, index, link, github, contributor 
 }: ProjectProps) {
   const isEven = index % 2 === 0;
 
@@ -51,6 +56,11 @@ export default function ProjectCard({
           <p className="text-gray-300 text-sm leading-relaxed mb-6">
             {description}
           </p>
+          {contributor && (
+            <div className="text-gray-300 text-xs mb-4">
+              Contributor for {contributor.role}: <a href={contributor.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-600">{contributor.name}</a>
+            </div>
+          )}
           
           <div className="flex flex-wrap gap-2 mb-6">
             {tech.map((t) => (

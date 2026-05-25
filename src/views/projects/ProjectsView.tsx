@@ -7,6 +7,31 @@ import ProjectsCard from './ProjectsCard';
 export default function ProjectsView() {
     const projects = [
     {
+        title: "GRC26 IMU-GPS Module",
+        date: "April 2025 - Present",
+        image: "/projects/grc26-imu-gps.png",
+        imageWidth: 1920,
+        imageHeight: 1080,
+        description: "Designed and developed a custom IMU-GPS module for University of Guelph Gryphon Racing FSAE team. The module collects the car's dynamics data, including GPS coordinates, acceleration, angular velocity, speed, and course. The module then transmits the car's dynamic data to CAN bus for the Remote Transmitter Module to transmit data to Remote Receiver Module to display on the dashboard for dynamics analysis. The module was developed using C++, FreeRTOS for real-time task management, and CAN communication protocol. The module is currently in development for GRC27 with Remote Logger Module and Web Dashboard for data analysis.",
+        contributor: {
+          name: "Zohair Salman",
+          role: "PCB and schematic design",
+          linkedin: "https://www.linkedin.com/in/zohairsalman/"
+        },
+        tech: ["C++", "CAN 2.0B", "Real-time Operating System"],
+        github: "https://github.com/GryphonRacingFSAE/GRC26/tree/khoa/imu_gps"
+    },
+    {
+        title: "GRC26 Car Dashboard",
+        date: "March 2026 - May 2026",
+        image: "/projects/grc26-dashboard.png",
+        imageWidth: 1920,
+        imageHeight: 1080,
+        description: "Designed and developed a custom dashboard for University of Guelph Gryphon Racing FSAE team. The dashboard displays real-time data from the car's CAN bus, including RPM, coolant temperature, battery voltage, throttle position meter and brake position meter. The dashboard was developed using C++, LVGL library for UI, and FreeRTOS for real-time task management. The dashboard is currently used in the team's 2026 car, GRC26.",
+        tech: ["C++", "LVGL", "CAN 2.0B", "Real-time Operating System"],
+        github: "https://github.com/GryphonRacingFSAE/GRC26"
+    },
+    {
         title: "Khoa Tran's Portfolio Website",
         date: "December 2025",
         image: "/projects/khoatran-portfolio.png",
@@ -52,7 +77,7 @@ export default function ProjectsView() {
 
   return (
     <section id="projects" className="py-12 bg-[var(--khoa-mahogany)] min-h-screen">
-      <Header title="My Projects / Group Work" as="h1" />
+      <Header title="Portfolio" as="h1" />
       
       <div className="relative w-[90%] sm:w-[70%] lg:w-[50%] mx-auto mt-10">
         <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-0.5 bg-gray-400"></div>

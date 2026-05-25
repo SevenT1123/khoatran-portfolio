@@ -13,12 +13,6 @@ const contactInfo = [
       link: "mailto:ngocanhk@uoguelph.ca",
     },
     {
-      icon: <FaPhone className="w-6 h-6"/>,
-      title: "Phone",
-      value: "+1 (519)-276-12006",
-      link: "tel:+15192761206",
-    },
-    {
       icon: <FaLinkedin className="w-6 h-6"/>,
       title: "LinkedIn",
       value: "Khoa Tran",
