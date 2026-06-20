@@ -7,6 +7,17 @@ import ProjectsCard from './ProjectsCard';
 export default function ProjectsView() {
     const projects = [
     {
+        title: "SevenT STM32 Data Logger using Foxglove",
+        date: "June 2026 - Present",
+        image: "/projects/sevent-stm32-foxglove.png",
+        imageWidth: 1920,
+        imageHeight: 1080,
+        description: "Designed and developed a custom IMU for Foxglove Prototyping. The module collects the car's dynamics data, acceleration, angular velocity. The module is in development for web application for Gryphon Racing product prototyping.",
+        tech: ["Embedded C", "Real-time Operating System", "Python", "Foxglove Studio"],
+        github: "https://github.com/SevenT1123/RemoteLoggerSevenT.git",
+        link: "https://youtu.be/yxn0pycE9H8"
+    },
+    {
         title: "GRC26 IMU-GPS Module",
         date: "April 2026 - Present",
         image: "/projects/grc26-imu-gps.png",
@@ -40,7 +51,7 @@ export default function ProjectsView() {
         description: "Personal website developed using Next.js and TailwindCSS for frontend.",
         tech: ["Next.js", "TypeScript", "Tailwind CSS", "HTML", "Nodejs"],
         github: "https://github.com/SevenT1123/khoatran-portfolio",
-        link: "comming soon"
+        link: "https://ktran7t.vercel.app/"
     },
     {
         title: "SevenT.vst3",
